@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration form</title>
+<style>
+body{
+font-size:20px;
+}
+p{
+    color: red;
+    text-align: center;
+    position: relative;
+    top: 180px;
+}
+
+	.container{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		height:100vh;
+		
+	}
+	form{
+	border: 2px solid white;
+	padding:10px 20px 30px 20px;
+	border-radius:12px;
+	}
+</style>
+</head>
+<body>
+<div class="container">
+<form action="RegisterationServlet" method="post">
+	<table>
+	<h2 style="text-align:center">Registration Form</h2>
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" name="user_name" placeholder="Enter Name"></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="Password" name="user_password" placeholder="Enter Password"></td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><input type="email" name="user_email" placeholder="Enter Email"></td>
+		</tr>
+		<tr>
+			<td>Select Gender: &nbsp</td>
+			<td><input type="radio" name="user_gender" value="male">Male
+			<input type="radio" name="user_gender" value="female">Female</td>
+		</tr>
+		
+		<tr>
+			<td>Select course:</td>
+			<td><select name="user_course">
+			<option value="java">Java</option>
+			<option value="android">Android</option>
+			<option value="spring">Spring</option>
+			<option value="hibernate">Hibernate</option>
+			</select></td>
+		</tr>
+		<tr>
+		<td></td>
+			<td><input type="checkbox" name="conditon" value="checked">Accept terms and condtions</td>
+			
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit">&nbsp &nbsp<input type="reset"></td>
+		</tr>
+	</table>
+</form>
+</div>
+</body>
+</html>

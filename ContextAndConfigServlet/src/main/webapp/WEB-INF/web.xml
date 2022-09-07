@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ContextAndConfigServlet</display-name>
+  <servlet>
+  	<servlet-name>ABC</servlet-name>
+  	<servlet-class>com.servlet.GoServlet</servlet-class>
+  	<init-param>
+  		<param-name>Database</param-name>
+  		<param-value>Oracle</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>Database-Driver</param-name>
+  		<param-value>JDBC</param-value>
+  	</init-param>
+  </servlet>
+  <context-param>
+  	<param-name>OS</param-name>
+  	<param-value>windows</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>Server</param-name>
+  	<param-value>Tomcat</param-value>
+  </context-param>
+  <servlet-mapping>
+  	<servlet-name>ABC</servlet-name>
+  	<url-pattern>/Servlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>PQR</servlet-name>
+  	<servlet-class>com.servlet.ComeServlet</servlet-class>
+  	<init-param>
+  		<param-name>Database</param-name>
+  		<param-value>MySql</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>Database-Driver</param-name>
+  		<param-value>Thin Driver</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>PQR</servlet-name>
+  	<url-pattern>/Servlet2</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration form</title>
+<style>
+body{
+font-size:20px;
+
+}
+p{
+    color: red;
+    text-align: center;
+	position:relative;
+	bottom:420px;
+   	
+}
+
+	.container{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		height:80vh;
+		flex-direction: column;
+		
+	}
+	form{
+	border: 2px solid white;
+	padding:10px 20px 30px 20px;
+	border-radius:12px;
+	}
+	.nav{
+	position:relative;
+	display: contents;
+
+	}
+</style>
+</head>
+<body style="background:#5d8aa8">
+<br>
+<div class=nav>
+	<a style="text-decoration: none;" href='home.html'>Home</a>&nbsp
+	<a style="text-decoration: none;" href='login.html'>Login</a>&nbsp
+	<a style="text-decoration: none;" href='signup.html'>Sign up</a>&nbsp
+	<hr>
+	</div>
+	
+<div class="container">
+<form action="RegisterationServlet" style="background: #add8e6; color:white;	"method="post">
+	<table>
+	<h2 style="text-align:center">Registration Form</h2>
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" name="user_name" placeholder="Enter Name"></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="Password" name="user_password" placeholder="Enter Password"></td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><input type="email" name="user_email" placeholder="Enter Email"></td>
+		</tr>
+		<tr>
+			<td>Select Gender: &nbsp</td>
+			<td><input type="radio" name="user_gender" value="male">Male
+			<input type="radio" name="user_gender" value="female">Female</td>
+		</tr>
+		<tr>
+		<td></td>
+			<td><input type="checkbox" name="conditon" value="checked">Accept terms and condtions</td>
+			
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit">&nbsp &nbsp<input type="reset"></td>
+		</tr>
+	</table>
+</form>
+</div>
+</body>
+</html>
